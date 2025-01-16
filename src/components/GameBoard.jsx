@@ -17,42 +17,6 @@ export default function GameBoard() {
         });
     }
 
-    function handleClick5(rowIndex, colIndex) {
-        setGameBoard((prevGameBoard) => {
-            const updatedGameBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
-            updatedGameBoard[rowIndex][colIndex] = "X";
-            return updatedGameBoard;
-        });
-    }
-    function handleClick4(rowIndex, colIndex) {
-        setGameBoard((prevGameBoard) => {
-            const updatedGameBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
-            updatedGameBoard[rowIndex][colIndex] = "X";
-            return updatedGameBoard;
-        });
-    }
-    function handleClick3(rowIndex, colIndex) {
-        setGameBoard((prevGameBoard) => {
-            const updatedGameBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
-            updatedGameBoard[rowIndex][colIndex] = "X";
-            return updatedGameBoard;
-        });
-    }
-    function handleClick2(rowIndex, colIndex) {
-        setGameBoard((prevGameBoard) => {
-            const updatedGameBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
-            updatedGameBoard[rowIndex][colIndex] = "X";
-            return updatedGameBoard;
-        });
-    }
-    function handleClick1(rowIndex, colIndex) {
-        setGameBoard((prevGameBoard) => {
-            const updatedGameBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
-            updatedGameBoard[rowIndex][colIndex] = "X";
-            return updatedGameBoard;
-        });
-    }
-
     return (
         <ol id="game-board">
             {gameBoard.map((row, rowIndex) => {
