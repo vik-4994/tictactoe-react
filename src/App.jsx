@@ -17,6 +17,12 @@ function App() {
               currentPlayer = 'O';
           }
 
+          for (const turn of currentTurns) {
+              if (turn.square.row === rowIndex && turn.square.col === colIndex) {
+                  return currentTurns;
+              }
+          }
+
           const updatedTurns = [{ square: {row: rowIndex, col: colIndex }, player: currentPlayer } , ...currentTurns];
           return updatedTurns;
       });
